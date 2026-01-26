@@ -9,9 +9,11 @@ Week Jan 27-30: First Team Meeting With Bessie. Start brainstorming unique proje
 
 ### Team Meeting Notes
 
-[Jan 27](#section_name)     [Feb 3](#section_name)      [Feb 10](#section_name)     [Feb 24](#section_name)     [March 3](#section_name)   
+[Jan 27](#Team_Meetings)     [Feb 3](#Team_Meetings)      
+[Feb 10](#Team_Meetings)     [Feb 24](#Team_Meetings)     
+[March 3](#Team_Meetings)    [March 10](#Team_Meetings)  
+[March 17](#Team_Meetings)   [March 24](#Team_Meetings)  
+[March 31](#Team_Meetings))  [April 7](#Team_Meetings) 
 
-[March 10](#section_name)   [March 17](#section_name)   [March 24](#section_name)   [March 31](#section_name)   [April 7](#section_name) 
 
-
-[Lab Notebook](#section name)
+[Lab Notebook](#Lab_Notebook)
