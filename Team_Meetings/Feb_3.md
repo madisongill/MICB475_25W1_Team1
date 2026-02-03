@@ -12,5 +12,5 @@ There have been strong links in gender differences in MS patients. Men diagnosed
 
 
 References
-Sex-based differences in MS: https://pmc.ncbi.nlm.nih.gov/articles/PMC8537319/ \ 
+Sex-based differences in MS: https://pmc.ncbi.nlm.nih.gov/articles/PMC8537319/  
 Men with MS experience accelerated cognitive decline: https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2023.1175874/full
