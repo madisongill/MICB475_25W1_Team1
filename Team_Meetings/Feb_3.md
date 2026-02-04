@@ -25,6 +25,8 @@ References
 
 Notes from meeting:
 
+<img src="/Feb_3_Team_Meeting_Whiteboard.jpeg" height="500" width="500">
+
 When look at Male vs Female do within different MS types (there are 3 types, one is severe the other two not as severe)
 Confounding variables impact 
 Divide dataset into 4 because need controls as well 
