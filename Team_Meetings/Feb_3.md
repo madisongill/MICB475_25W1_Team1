@@ -64,3 +64,7 @@ Extract from server don't edit directly on Metadata file
 Make sure filter matches manifest file, use R
 reupload final version to server and use for uploading.
 
+For next team meeting: preferred if have outline by next team meeting so it's easier to identify gaps
+
+# Everytime you reach a decision point email Bessie (ex:trimming parameters!)
+Bessie communication method: prefer email
