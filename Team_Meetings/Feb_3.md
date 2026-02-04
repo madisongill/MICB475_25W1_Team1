@@ -61,4 +61,6 @@ Bessie will not review draft, but can help build outline
 
 Extract from server don't edit directly on Metadata file
 
+Make sure filter matches manifest file, use R
+reupload final version to server and use for uploading.
 
