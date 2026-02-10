@@ -3,13 +3,9 @@
 
 <img src="/UBC Sunrise Photo.jpeg" height="500" width="500">
 
-## Schedule
-
-Week Jan 27-30: First Team Meeting With Bessie. Start brainstorming unique project 2 research questions.
-
 ### Team Meeting Notes
 
-[Jan 27](#/Team_Meetings)     [Feb 3](#/Team_Meetings)      
+[Jan 27](https://github.com/madisongill/MICB475_25W1_Team1/blob/main/Team_Meetings/Jan_27.md)     [Feb 3](https://github.com/madisongill/MICB475_25W1_Team1/blob/main/Team_Meetings/Feb_3.md)     
 [Feb 10](#/Team_Meetings)     [Feb 24](#/Team_Meetings)     
 [March 3](#/Team_Meetings)    [March 10](#/Team_Meetings)  
 [March 17](#/Team_Meetings)   [March 24](#/Team_Meetings)  
