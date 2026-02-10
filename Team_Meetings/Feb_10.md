@@ -16,7 +16,11 @@
 #### Disease distribution
 * The samples for men and women small for PPMS and SPMS
   *   Particularly for men diagnosed PPMS, is this a significant sample to do analysis on?
-  *   Keeping in mind we would have to run 6 separate analyses, not including control 
+  *   Keeping in mind we would have to run 6 separate analyses, not including control
+* [Forms of MS](https://pmc.ncbi.nlm.nih.gov/articles/PMC4132635/):
+  * PPMS: Steady decline of neurological function without recovery
+  * SPMS: Progressive neurological decline
+  * RRMS: Initial stage of MS, there are alternating periods of neurological disability and recovery
 <img width="129" height="102" alt="image" src="https://github.com/user-attachments/assets/d05ae992-d01a-4c72-a100-0a5fd1bfdb51" />
 
 #### Proposal Outline 
