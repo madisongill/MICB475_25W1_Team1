@@ -3,7 +3,7 @@
 ## To do items from last week
 
 * Filter out the European and South American data from the metadata
-* Possibly filter out the [eczema data](https://ojs.library.ubc.ca/index.php/UJEMI/article/view/199481) (there were only 32 eczema cases in the USA cohort) 
+* Possibly filter out the [eczema data](https://ojs.library.ubc.ca/index.php/UJEMI/article/view/199481) (there were only 32 eczema cases in the USA cohort, the filtered data uploaded does not include the eczema patients) 
 * Ensure that the manifest and the metadata match to prevent errors in the QIIME pipeline
 * Determine if separate analyses should be done based on disease progression (PPMS, SPMS, RRMS)
 * Outline for the proposal
