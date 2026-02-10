@@ -13,7 +13,7 @@
 ### Research Question: Are there differences in gut microbiome composition between female and male MS patients?
 
 #### Disease distribution
-* The distribution for men and women small for PPMS and SPMS
+* The samples for men and women small for PPMS and SPMS
   *   Particularly for men diagnosed PPMS, is this a significant sample to do analysis on?
   *   Keeping in mind we would have to run 6 separate analyses, not including control 
 <img width="129" height="102" alt="image" src="https://github.com/user-attachments/assets/d05ae992-d01a-4c72-a100-0a5fd1bfdb51" />
