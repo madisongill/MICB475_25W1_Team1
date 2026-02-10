@@ -10,7 +10,7 @@
 
 ## Meeting Agenda
 
-### Research Question: Are there differences in gut microbiome composition between female and male gut microbiome in MS patients?
+### Research Question: Are there differences in gut microbiome composition between female and male MS patients?
 
 #### Disease distribution
 * The distribution for men and women small for PPMS and SPMS
