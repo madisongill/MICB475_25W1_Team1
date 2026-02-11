@@ -54,4 +54,80 @@
 
 
 ## Action Items 
-* Meeting next week? Reading break 
+* Meeting next week? Reading break
+
+* # Feb 10, 2026 Meeting Agenda
+
+## To do items from last week
+
+* Filter out the European and South American data from the metadata
+* Possibly filter out the [eczema data](https://ojs.library.ubc.ca/index.php/UJEMI/article/view/199481) (there were only 32 eczema cases in the USA cohort, the filtered data uploaded does not include the eczema patients)
+  * Should we filter out N/A cases? 
+* Ensure that the manifest and the metadata match to prevent errors in the QIIME pipeline
+* Determine if separate analyses should be done based on disease progression (PPMS, SPMS, RRMS)
+* Outline for the proposal
+
+
+## Notes from meeting
+Not necessary to filter out eczema patients
+Separate the three MS subtypes if we think based on literature search that there are sex based differences
+Could group the two male severity subtypes, 8 not too low to work with
+RRMS and SPMS group together?
+Include eczema group not worth it to remove
+Want to balance number of samples per comparison group, if not feasible it is okay just need enough samples per group
+A lot of comparison groups will not see significant differences
+Manifest because subsetting data
+Do not alter actual FASTQ file, keep files you want and not the ones you are not running in analysis own
+# For proposal:
+* Need QIIME2 pipeline done in proposal
+* Do not filter out eczema patients
+* Do not group the MS groups suggested
+* Mention diversity, we are going to use alpha and beta diversity, picrust 2 functionality, 3 main parts
+* Aims had 6 describe we propose to do these analyses and how are they going to answer our research question
+
+* Proposed title
+do not want to sound conclusive, because no results obtained
+avoid being too broad
+
+*Introduction/background
+define key terms, or anything that is not common knowledge
+how MS will affect the microbiome as well as sex
+does not have to be human data could be mouse models
+other autoimmune disorders could be used if cannot find anything on MS
+if has been done before note that
+T1D sex differences been studied so ensure to include in introduction
+Why do you think different between male and female: ex: more inflammed environment, different immune system
+
+* Go from broad to specific introduction
+
+  Why do we think microbiome can answer sex difference in MS
+
+* Hypothesis/Research question
+  We hypothesize that there will be significance differences in MS between men and women
+  rationales grounded by past research
+
+* Experimental Aims
+  6 Aims in total
+  could also do 3 aims, diversity, taxonomy and functionality differences
+
+  Beta select 2 of them Weighted unifrac is gold standard, people normally do Bray-curtis answer what it tells you
+
+* Proposed approach
+  detail in table format: have aims as columns, rows describe different steps
+  Aim 2-5 dependent on QIIME 2 pipeline
+  do not be redundant and repeat
+ * citations are important cite all tools you use, QIIME2 and DADA2 as it is separate R packages cite it, picrust2
+Need Gantt chart, leave time for writing the manuscript, making the slides, do not need to follow too closely
+
+  
+
+## Action Items 
+* Meeting next week? Reading break
+* QIIME 2 assignment 2: read length, seq depth, rarefaction, justify primers used, truncation
+* Make sure to send to Bessie before proceeding
+* References just need to be consistent style (in text numbers) reference section use Zotero
+* Participation report: how everyone contributed
+* Have 4 weeks to do analysis
+* 1 person per aim
+* For each aim have different folder, scripts go into each individual aim, subfolder for figures and tables
+
