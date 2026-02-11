@@ -56,7 +56,7 @@
 ## Action Items 
 * Meeting next week? Reading break
 
-* # Feb 10, 2026 Meeting Agenda
+
 
 ## To do items from last week
 
