@@ -1,3 +1,4 @@
+#February 10th: Team Meeting concluded that filtering out eczema data is unecessary. This adds the patients that had been removed who had received an eczema diagnosis
 library(tidyverse)
 
 
