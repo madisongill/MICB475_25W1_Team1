@@ -35,7 +35,8 @@
   * Draw from literature that focuses on gut microbiome differences in other major disease 
 * Hypothesis
 * Aims
-  * Look at taxonomic differences
+  * Look at diversity differences
+  * Look at composition differences
   * Look at functional differences   
 * Approach
 * Metrics
