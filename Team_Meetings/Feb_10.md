@@ -23,6 +23,10 @@
   * RRMS: Initial stage of MS, there are alternating periods of neurological disability and recovery
 <img width="129" height="102" alt="image" src="https://github.com/user-attachments/assets/d05ae992-d01a-4c72-a100-0a5fd1bfdb51" />
 
+## Including eczema patients
+<img width="120" height="89" alt="image" src="https://github.com/user-attachments/assets/bb7f0fa0-57c3-4760-a796-afc19f7f65a5" />
+
+
 #### Proposal Outline 
 * Title
 * Background info
