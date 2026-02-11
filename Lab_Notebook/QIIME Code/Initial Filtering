@@ -9,7 +9,7 @@ scp -r root@10.19.139.184:/data/project_2 .
 
 #Complete manifest and metadata on R studio
 
-#Upload the filtered metadata and manifest files onto the project_2 folder in the team server. Working directory is whichever folder you completed the data wrangling in. Ours was "project_2_revised"
+#Upload the filtered metadata and manifest files onto the project_2 folder in the team server. Working directory is whichever folder you completed the data wrangling in. Ours was "project_2"
 
 scp manifest_usa.tsv root@10.19.139.184:/data/project_2
 scp metadata_usa.tsv root@10.19.139.184:/data/project_2
