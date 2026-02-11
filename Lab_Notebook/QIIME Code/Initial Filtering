@@ -1,0 +1,15 @@
+#Project 2 initial data filtering
+
+#Download the MS dataset from the datasets folder into working directory "data" in the team server. Working directory is in "data"
+cp ../datasets/project_2/MS/ms_manifest.tsv project_2/manifest.tsv
+cp ../datasets/project_2/MS/ms_metadata.tsv project_2/metadata.tsv
+
+#Export the files onto the desktop. Working directory is local "Desktop"
+scp -r root@10.19.139.184:/data/project_2 .
+
+#Complete manifest and metadata on R studio
+
+#Upload the filtered metadata and manifest files onto the project_2 folder in the team server. Working directory is whichever folder you completed the data wrangling in. Ours was "project_2_revised"
+
+scp manifest_usa.tsv root@10.19.139.184:/data/project_2
+scp metadata_usa.tsv root@10.19.139.184:/data/project_2
