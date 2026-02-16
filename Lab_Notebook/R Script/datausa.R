@@ -1,9 +1,11 @@
 #February 10th: Team Meeting concluded that filtering out eczema data is unecessary. This adds the patients that had been removed who had received an eczema diagnosis
 library(tidyverse)
+library(dplyr)
 
-
-#Load the metadata in
+#Load the metadata in and rename column sample.id
 metadata <- read.table("metadata.tsv", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+metadata <- rename(metadata, sampleid = sample.id)
+metadata
 
 #Remove Edinburgh, Buenos Aires, and San Sebastian
 str(metadata)
@@ -27,9 +29,6 @@ disease_sex <- table(metadata_usa$disease_course, metadata_usa$sex)
 print(disease_sex)
 
 #Export edited metadata tsv file
-
-library(readr)
-
 write_tsv(metadata_usa, "metadata_usa.tsv")
 
 #Edit the manifest data to match
