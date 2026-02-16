@@ -43,7 +43,7 @@ manifest_usa <- manifest[manifest$`sampleid` %in% keep_samples, ]
 write_tsv(manifest_usa, "manifest_usa.tsv")
 
 #Check if the manifest and the metadata match :)
-metadata_ids <- metadata_usa$sample.id
-manifest_ids <- manifest_usa$sample.id
+metadata_ids <- metadata_usa$sampleid
+manifest_ids <- manifest_usa$sampleid
 
 all(manifest_ids %in% metadata_ids)
