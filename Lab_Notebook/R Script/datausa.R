@@ -32,13 +32,13 @@ print(disease_sex)
 write_tsv(metadata_usa, "metadata_usa.tsv")
 
 #Edit the manifest data to match
-keep_samples <- metadata_usa$sample.id
+keep_samples <- metadata_usa$sampleid
 
 manifest <- read.table("manifest.tsv", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 manifest <- rename(manifest, sampleid = sample.id)
 manifest
 
-manifest_usa <- manifest[manifest$`sample.id` %in% keep_samples, ]
+manifest_usa <- manifest[manifest$`sampleid` %in% keep_samples, ]
 
 write_tsv(manifest_usa, "manifest_usa.tsv")
 
