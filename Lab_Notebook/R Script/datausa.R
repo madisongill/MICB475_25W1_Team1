@@ -35,6 +35,8 @@ write_tsv(metadata_usa, "metadata_usa.tsv")
 keep_samples <- metadata_usa$sample.id
 
 manifest <- read.table("manifest.tsv", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+manifest <- rename(manifest, sampleid = sample.id)
+manifest
 
 manifest_usa <- manifest[manifest$`sample.id` %in% keep_samples, ]
 
