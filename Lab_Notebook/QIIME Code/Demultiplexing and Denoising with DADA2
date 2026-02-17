@@ -1,0 +1,25 @@
+# February 16 - Demultiplexing and Denoising Data
+
+# Importing filtered manifest into project 2 folder on team server and demultiplexing data 
+qiime tools import \
+  --type "SampleData[SequencesWithQuality]" \
+  --input-format SingleEndFastqManifestPhred33V2 \
+  --input-path ./manifest_usa.tsv \
+  --output-path ./demux_seqs.qza
+
+# Convert the qza file to a qzv file
+qiime demux summarize \
+  --i-data demux_seqs.qza \
+  --o-visualization demux_seqs.qzv
+
+# Secure transfer qzv file to local computer
+ scp root@10.19.139.184:/data/project_2/demux_seqs.qzv .
+
+# Denoising data using DADA2
+qiime dada2 denoise-single \
+  --i-demultiplexed-seqs demux_seqs.qza \
+  --p-trim-left 0 \
+  --p-trunc-len 0 \
+  --o-representative-sequences rep-seqs.qza \
+  --o-table table.qza \
+  --o-denoising-stats stats.qza
