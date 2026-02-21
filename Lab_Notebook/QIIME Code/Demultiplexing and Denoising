@@ -1,4 +1,4 @@
-# February 16 - Demultiplexing and Denoising Data
+# February 16 - Demultiplexing and Denoising Data using DADA2. Data is also filtered out by taxa and features.
 
 # Importing filtered manifest into project 2 folder on team server and demultiplexing data 
 qiime tools import \
@@ -33,6 +33,34 @@ qiime feature-table summarize \
 qiime feature-table tabulate-seqs \
   --i-data rep-seqs.qza \
   --o-visualization rep-seqs.qzv
+
+# Remove mitochondria and chloroplast sequences
+qiime taxa filter-table \
+  --i-table table.qza \
+  --i-taxonomy taxonomy.qza \
+  --p-exclude mitochondria,chloroplast \
+  --o-filtered-table table-no-mitochondria-no-chloroplast.qza
+
+  qiime feature-table summarize \
+  --i-table table-no-mitochondria-no-chloroplast.qza \
+  --o-visualization table-no-mitochondria-no-chloroplast.qzv \
+  --m-sample-metadata-file metadata_usa.tsv
+
+# Filter out rare ASVs from filtered taxa table
+qiime feature-table filter-features \
+  --i-table table-no-mitochondria-no-chloroplast.qza \
+  --p-min-frequency 5 \
+  --o-filtered-table final-cleaned-table.qza
+
+qiime feature-table summarize \
+  --i-table final-cleaned-table.qza \
+  --o-visualization final-cleaned-table.qzv \
+  --m-sample-metadata-file metadata_usa.tsv
+
+# Secure transfer to local server
+scp -r root@10.19.139.184:/data/project_2/table.qzv .
+scp -r root@10.19.139.184:/data/project_2/final-cleaned-table.qzv .
+
 
 # Seccure transfer table.qzv file to local computer and view 
   scp -r root@10.19.139.184:/data/project_2/table.qzv .
