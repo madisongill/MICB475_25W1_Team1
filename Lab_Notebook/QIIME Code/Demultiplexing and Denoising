@@ -61,6 +61,3 @@ qiime feature-table summarize \
 scp -r root@10.19.139.184:/data/project_2/table.qzv .
 scp -r root@10.19.139.184:/data/project_2/final-cleaned-table.qzv .
 
-
-# Seccure transfer table.qzv file to local computer and view 
-  scp -r root@10.19.139.184:/data/project_2/table.qzv .
