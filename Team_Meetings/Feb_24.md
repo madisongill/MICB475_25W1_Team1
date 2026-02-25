@@ -17,11 +17,11 @@
 
 ## Notes from meeting
 
-*MS subtype not included in title, helpful to mention more about different subtypes in title and introduction
-*Separate female and male in healthy group
-*If one group has no significant differences can still do aim 2 would just involve more work
-*DON'T FORGET TO GLOM TO SAME LEVEL (ex: phylum, genus)
-*CoreMicrobiome use analysis website and decide from there what level to glom to do
-*Aims are great feedback 
-*CoreMicrobiome not performing any specific stats included in package
-*Should start analysis now!!
+* MS subtype not included in title, helpful to mention more about different subtypes in title and introduction
+* Separate female and male in healthy group
+* If one group has no significant differences can still do aim 2 would just involve more work
+* DON'T FORGET TO GLOM TO SAME LEVEL (ex: phylum, genus)
+* CoreMicrobiome use analysis website and decide from there what level to glom to do
+* Aims are great feedback 
+* CoreMicrobiome not performing any specific stats included in package
+* Should start analysis now!!
