@@ -52,6 +52,11 @@ class(TAXA)
 # Create phyloseq object
 ms <- phyloseq(OTU, SAMP, TAXA, phylotree)
 
+#Filter phyloseq object
+ms_filt <- subset_taxa(ms,  Domain == "d__Bacteria" & Class!="c__Chloroplast" & Family !="f__Mitochondria")
+ms_filt_nolow <- filter_taxa(ms_filt, function(x) sum(x)>5, prune = TRUE)
+ms_filt_nolow_samps <- prune_samples(sample_sums(ms_filt_nolow)>100, ms_filt_nolow)
+
 # Rarefy phyloseq object
 ms_rare <- rarefy_even_depth(ms, rngseed = 1, sample.size = 10022)
 
@@ -100,3 +105,4 @@ plot_ordination(ppms, pcoa_uf, color = "sex", shape = "sex")  +
 adonis2(dist_uf ~ sex,
 
         data = data.frame(sample_data(ppms)))
+
