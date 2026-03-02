@@ -62,12 +62,10 @@ ppms
 #Calculate Shannon's Diversity index and plot
 sd_ppms <- estimate_richness(ppms, measures = "Shannon")
 sd_ppms$sex <- sample_data(ppms)$sex
-sd_ppms
 
 sd_plot <- plot_richness(ppms, x = "sex", measures = "Shannon")
 
-wilcox.test(Shannon ~ sex, data = sd_ppms)
-
+# Box plot
 ggplot(sd_ppms, aes(x = sex, y = Shannon)) +
   geom_boxplot() +
   geom_jitter(width = 0.2, alpha = 0.6) +
@@ -82,8 +80,7 @@ pd_ppms <- pd(t(otu_table(ppms)),
             include.root = FALSE)
 pd_ppms$sex <- sample_data(ppms)$sex
 
-wilcox.test(PD ~ sex, data = pd_ppms)
-
+#Boxplot
 ggplot(pd_ppms, aes(x = sex, y = PD)) +
   geom_boxplot() +
   geom_jitter(width = 0.2, alpha = 0.6) +
@@ -101,4 +98,5 @@ plot_ordination(ppms, pcoa_uf, color = "sex", shape = "sex")  +
   geom_point(size = 2)
 
 adonis2(dist_uf ~ sex,
+
         data = data.frame(sample_data(ppms)))
