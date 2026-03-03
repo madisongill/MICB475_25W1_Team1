@@ -3,7 +3,8 @@
 
 ## Items To Discuss:
 
-* Go over diversity analysis code make sure script workflow makes sense
+* Fixed Github links (check them out Bessie :))
+*  Go over diversity analysis code make sure script workflow makes sense
 * Workshop proposal with Bessie and fix it
 * Discuss findings with statistical analysis and receive advice on how to proceed
 
