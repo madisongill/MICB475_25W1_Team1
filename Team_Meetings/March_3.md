@@ -8,7 +8,7 @@
 * Workshop proposal with Bessie and fix it
 * Discuss findings with statistical analysis and receive advice on how to proceed
 
-
+Note: I added the SPMS stasticial function output from Adonis in the Scripts folder if you want to take a look (Madison).
 ## Meeting Notes:
 
 
