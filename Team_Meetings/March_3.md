@@ -10,6 +10,8 @@
 
 Note: I added the SPMS stasticial function output from Adonis in the main Team Meeting folder if you want to take a look (Madison).
 
+<img width="583" height="95" alt="SPMS Quick Adonis Result" src="https://github.com/user-attachments/assets/a9560159-1cec-4b3f-a5ea-8098627c0f23" />
+
 ## Meeting Notes:
 
 
