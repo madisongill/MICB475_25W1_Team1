@@ -12,4 +12,5 @@
 * Box and whisker plots just show box, whisker and outlier points. Still using boxplots.
 * Violin plots
 * Last meeting will go over all the figures and how to present them in the manuscript.
-* 
+
+# USE UNRAREIFIED PHYLOSEQ OBJECT FOR AIM 2
