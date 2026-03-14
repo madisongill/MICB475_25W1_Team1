@@ -52,6 +52,9 @@ class(TAXA)
 # Create phyloseq object
 ms <- phyloseq(OTU, SAMP, TAXA, phylotree)
 
+# Save phyloseq object
+saveRDS(ms, file = "phyloseq_object.rds")
+
 #Filter phyloseq object
 ms_filt <- subset_taxa(ms,  Domain == "d__Bacteria" & Class!="c__Chloroplast" & Family !="f__Mitochondria")
 ms_filt_nolow <- filter_taxa(ms_filt, function(x) sum(x)>5, prune = TRUE)
