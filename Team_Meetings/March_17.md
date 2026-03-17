@@ -10,7 +10,6 @@
 
 
 * Indicator Taxa:
-<img width="1288" height="59" alt="isa_revised_lower" src="https://github.com/user-attachments/assets/07f31f99-9226-4ddf-aa44-2bdd124cf4cb" />
 
 
 * DESeq2:
@@ -20,6 +19,9 @@
 
 
 ## Questions about the data
+1. What is the best method to present the indicator taxa findings?
+2. How to determine when reading the bar plot for DeSeq2 analysis if the ratio is women to men or men to women ?
+3. How to interpret the log2fold change?
 
 
 
