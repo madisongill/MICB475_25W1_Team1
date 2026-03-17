@@ -28,17 +28,4 @@ male_ASVs <- core_members(male_stat, detection=0.001, prevalence = 0.8)
 venn <- ggVennDiagram(x=list(Female= female_ASVs, Male = male_ASVs))
 
 # Save venn diagram
-ggsave("venn_ms_sex.png", venn)
-
-# Make a core microbiome heatmap
-ms_core <- core(ms_RA,
-                detection = 0.001,
-                prevalence = 0.8)
-
-ms_genus <- tax_glom(ms_core, "Genus")
-
-plot_heatmap(ms_genus,
-             method = "NMDS",
-             distance = "bray",
-             taxa.label = "Genus",
-             sample.label = "sex")
+ggsave("venn_ms_sex.png", plot = venn, width = 16, height = 8)
