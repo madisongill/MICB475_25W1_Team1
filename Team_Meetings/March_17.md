@@ -60,4 +60,10 @@ impact on gut barrier function and advanced cultivation strategies to realize th
 - Core takes in other factors beyond abundance
 - indicator species significant to pass p-value but threshold to low, do not need to report findings from ISA
 - can say performed ISA but did not generate significant results
-  
+
+#Action Items
+ * Fix DESeq plot
+ * Glom DESeq
+ * Run all Aim 2 analyses on Healthy subsets
+ * Run PiCRUST analysis
+ * Research on the results of Aim 2 and Aim 3 
