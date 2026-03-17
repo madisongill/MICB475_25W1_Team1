@@ -20,7 +20,7 @@
 
 <img width="2903" height="1703" alt="DESeq_volcano_plot" src="https://github.com/user-attachments/assets/8bd32a84-bd38-4711-b41c-e5a3d3f02dfb" />
 
-Found in the literature that women have higher abundance than men of Akkermansia, which is consistent with our results of men having a negative log2fold change (Kim et al., 2019). However, in our proposal we found lots of papers supporting an increased abundance of bacteroides spp. in men which does not match the obtained results as we see a log2fold decrease but then we also see an increase in Bacteroides.2 therefore not conclusive on this genus's distribution between men and women (Kim et al., 2019)
+Found in the literature that women have higher abundance than men of Akkermansia, which is consistent with our results of men having a negative log2fold change (Kim et al., 2019). However, in our proposal we found lots of papers supporting an increased abundance of bacteroides spp. in men which does not match the obtained results as we see a log2fold decrease but then we also see an increase in Bacteroides.2 therefore not conclusive on this genus's distribution between men and women (Kim et al., 2019). For the bacterial genus Alistipes found that male mice had more than female mice when on a high fat diet instead of chow diet;however, it was also found that during puberty girls have more Alistipes species than boys (McGee & Huttenhower, 2021; Yuan et al., 2020).
 
 ## Questions about the data
 1. What is the best method to present the indicator taxa findings?
