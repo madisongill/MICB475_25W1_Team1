@@ -8,10 +8,12 @@ library(DESeq2)
 #### Load non-rarefied phyloseq object ####
 load("ms_phyloseq_norarefy.RData")
 
+# Subset to only include MS patients
+ms_only <- subset_samples(ms_filt_nolow_samps, disease == "MS")
 
 #### DESeq ####
 ## Got a zeros error, will add '1' count to all reads
-ms_plus1 <- transform_sample_counts(ms_filt_nolow_samps, function(x) x+1)
+ms_plus1 <- transform_sample_counts(ms_only, function(x) x+1)
 ms_deseq <- phyloseq_to_deseq2(ms_plus1, ~`sex`)
 DESEQ_ms <- DESeq(ms_deseq)
 res <- results(DESEQ_ms, tidy=TRUE) 
@@ -42,7 +44,7 @@ sigASVs_vec <- sigASVs %>%
   pull(ASV)
 
 # Prune phyloseq file
-ms_phyloseq_norarefy_DESeq <- prune_taxa(sigASVs_vec,ms_filt_nolow_samps)
+ms_phyloseq_norarefy_DESeq <- prune_taxa(sigASVs_vec,ms_only)
 sigASVs <- tax_table(ms_phyloseq_norarefy_DESeq ) %>% as.data.frame() %>%
   rownames_to_column(var="ASV") %>%
   right_join(sigASVs) %>%
