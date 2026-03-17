@@ -30,6 +30,7 @@ volcano_plot <- res %>%
   geom_point(aes(x=log2FoldChange, y=-log10(padj), col=significant))
 volcano_plot
 
+# Save volcano plot
 ggsave(filename="DESeq_volcano_plot.png",volcano_plot)
 
 
