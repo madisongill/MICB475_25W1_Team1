@@ -48,3 +48,10 @@ impact on gut barrier function and advanced cultivation strategies to realize th
 
 
 # Notes from Team Meeting
+
+- For core microbiome analysis do not need to resolve to species level
+- Do not need to include indicator
+- For DESeq2 glom to genus level for both plots
+- Male ASVs decreased
+- add horizontal line as p-adjusted value cut off
+  
