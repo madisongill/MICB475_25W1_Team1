@@ -54,4 +54,10 @@ impact on gut barrier function and advanced cultivation strategies to realize th
 - For DESeq2 glom to genus level for both plots
 - Male ASVs decreased
 - add horizontal line as p-adjusted value cut off
+- okay to only focus on specific disease, can do healthy and compare male and female in context of MS
+- Next step: run healthy analysis vs MS
+- reach different conclusions from the different analyses if they don't match that is fine, diff stats to define if core taxa or not
+- Core takes in other factors beyond abundance
+- indicator species significant to pass p-value but threshold to low, do not need to report findings from ISA
+- can say performed ISA but did not generate significant results
   
