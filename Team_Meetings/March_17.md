@@ -10,7 +10,9 @@
 
 
 * Indicator Taxa:
-
+<img width="1288" height="59" alt="isa_revised_lower" src="https://github.com/user-attachments/assets/6f778db1-a669-4244-bb0d-5ce038f662bb" />
+  * These results are when I lowered the indicator value to 0.5
+  * There were no results when I had an indicator value of 0.7
 
 * DESeq2:
 
