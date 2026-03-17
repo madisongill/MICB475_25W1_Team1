@@ -7,11 +7,11 @@
 
 * Core Microbiome:
   * ASVs:
-<img width="4800" height="2400" alt="venn_ms_sex" src="https://github.com/user-attachments/assets/ef6b672d-cd63-4eba-a24a-5ff756865b25" />
-  * Unique Genera:
-<img width="4800" height="2400" alt="venn_ms_sex_filtered" src="https://github.com/user-attachments/assets/ba16f143-89aa-47d0-b74d-52857a1e68f6" />
+    <img width="4800" height="2400" alt="venn_ms_sex" src="https://github.com/user-attachments/assets/ef6b672d-cd63-4eba-a24a-5ff756865b25" />
+  * Unique Genera
+    <img width="4800" height="2400" alt="venn_ms_sex_filtered" src="https://github.com/user-attachments/assets/ba16f143-89aa-47d0-b74d-52857a1e68f6" />
 
-<img width="433" height="245" alt="venn_genera_sex" src="https://github.com/user-attachments/assets/01ed8101-92d0-4386-8e7f-8d58cac52ac1" />
+    <img width="4800" height="2400" alt="venn_genera_sex" src="https://github.com/user-attachments/assets/01ed8101-92d0-4386-8e7f-8d58cac52ac1" />
 
 * Indicator Taxa:
  *  These results are when I lowered the indicator value to 0.5
