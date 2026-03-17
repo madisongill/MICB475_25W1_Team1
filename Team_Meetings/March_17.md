@@ -10,6 +10,7 @@
 
 
 * Indicator Taxa:
+<img width="1288" height="59" alt="isa_revised_lower" src="https://github.com/user-attachments/assets/07f31f99-9226-4ddf-aa44-2bdd124cf4cb" />
 
 
 * DESeq2:
