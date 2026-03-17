@@ -9,7 +9,7 @@
   * ASVs:
     <img width="4800" height="2400" alt="venn_ms_sex" src="https://github.com/user-attachments/assets/ef6b672d-cd63-4eba-a24a-5ff756865b25" />
     * 2 types of bacteroids and blautia are shared (different ASVs)
-    * bacteroides and blautia genus also show up again for males 
+    * bacteroides and blautia genus also show up again for males --> could be different at the species level but we have not resolved that 
   * Unique Genera (removed duplicates):
     <img width="4800" height="2400" alt="venn_ms_sex_filtered" src="https://github.com/user-attachments/assets/ba16f143-89aa-47d0-b74d-52857a1e68f6" />
 
