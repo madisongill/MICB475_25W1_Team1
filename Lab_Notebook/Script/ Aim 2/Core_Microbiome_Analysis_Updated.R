@@ -12,7 +12,7 @@ library(ggvenn)
 ms <- readRDS("phyloseq_object_filtered.rds")
 
 # Subset to only include MS patients
-ms_only <- subset_samples(ms_filt_nolow_samps, disease == "MS")
+ms_only <- subset_samples(ms, disease == "MS")
 
 # Convert relative abundance 
 ms_RA <- transform_sample_counts(ms_only, fun=function(x) x/sum(x))
