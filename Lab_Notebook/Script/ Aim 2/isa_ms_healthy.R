@@ -10,7 +10,7 @@ ms <-readRDS("phyloseq_object_filtered.rds")
 ms_genus <- tax_glom(ms, "Genus", NArm = FALSE)
 ms_genus_RA <- transform_sample_counts(ms_genus,fun=function(x) x/sum(x))
 
-#subset data into treatment and control groups
+#subset data into control groups
 ms_stat_healthy <- subset_samples(ms_genus_RA, disease=="Control")
 
 # Run indicator species analysis using the sex variable
