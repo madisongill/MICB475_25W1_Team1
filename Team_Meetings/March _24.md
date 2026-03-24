@@ -15,3 +15,7 @@ PICrust2 Analysis
 ### DESeq
 <img width="2840" height="1700" alt="DESeq_barplot_2" src="https://github.com/user-attachments/assets/958c9b20-43cb-474b-b9b1-8702c3ffa78c" />
 <img width="2840" height="1700" alt="DESeq_volcano_plot_2" src="https://github.com/user-attachments/assets/f37f478f-33b0-4daf-a302-4f441791529a" />
+
+### Core Microbiome
+<img width="4800" height="3600" alt="venn_control_sex_genera_named" src="https://github.com/user-attachments/assets/6c476835-2479-4c69-bbd8-8dba28d11924" />
+<img width="433" height="245" alt="venn_ms_sex_genera_named" src="https://github.com/user-attachments/assets/aaf1230b-5fb7-4a40-afb5-271b9e81ec4e" />
