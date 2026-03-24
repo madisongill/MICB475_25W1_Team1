@@ -1,7 +1,10 @@
-#Team Meeting Agenda
-##Findings from Aim 3:
+Team Meeting Agenda
+
+Findings from Aim 3:
 PICrust2 Analysis
-##Selected Figures for the manuscript
+
+Selected Figures for the manuscript
+
 Alpha and Beta Diversity
 
 DESeq
