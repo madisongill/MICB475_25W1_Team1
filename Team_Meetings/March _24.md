@@ -6,6 +6,8 @@ PICrust2 Analysis
 ## Selected Figures for the manuscript
 
 ### Alpha and Beta Diversity
+<img width="453" height="245" alt="Faiths_PD_MS" src="https://github.com/user-attachments/assets/bf3ae564-77c7-4004-86d1-93f5f706b106" />
+<img width="453" height="245" alt="Shannon_MS" src="https://github.com/user-attachments/assets/34398c43-8509-4cc0-aaee-c67e391936ea" />
 
 <img width="354" height="245" alt="unweighted unifrac pcoa" src="https://github.com/user-attachments/assets/10de59c1-7e03-48c5-a0b2-b8f784c1b19d" />
 <img width="354" height="245" alt="weighted unifrac pcoa" src="https://github.com/user-attachments/assets/6112005c-d708-4bc0-abd2-2b0f6e71c028" />
