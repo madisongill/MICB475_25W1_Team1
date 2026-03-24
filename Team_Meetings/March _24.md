@@ -21,3 +21,24 @@ PICrust2 Analysis
 ### Core Microbiome
 <img width="4800" height="3600" alt="venn_control_sex_genera_named" src="https://github.com/user-attachments/assets/6c476835-2479-4c69-bbd8-8dba28d11924" />
 <img width="433" height="245" alt="venn_ms_sex_genera_named" src="https://github.com/user-attachments/assets/aaf1230b-5fb7-4a40-afb5-271b9e81ec4e" />
+
+
+## Notes from meeting:
+
+- Add ellipses for beta diversity even though they will overlap, make sure everything is consistent with colors and shapes for men and women
+- Figure 1 panel A: shannon, panel b: faith, panel c: weighted unifrac, panel d: unweighted unifrac
+- do controls for alpha and beta analysis, put in figures baseline control, 4 more panels or make into two figures one with control and one with ms
+- have female circle inside male circle, better way to demonstrate 0 for women
+- Figure 2 core microbiome
+- figure 3: deseq volcano plot control panel a and b is ms
+- not significant fold changes
+- baseline men and women no difference and with ms no difference, minute taxa changes
+- talk about the one that showed up for women that was unique, even though there are differences generally they are the same
+- 8 panels for figure 1: alpha and beta
+- 2 panels figure 2: core microbiome
+- 2 panels figure 3: volcano plots and deseq
+- do not include picrust2 as there are no results to show
+- all data supports takeaway there is no difference
+- can mention isa and other analyses and comment there were no results
+- format figures, next meeting have draft powerpoint ready
+
