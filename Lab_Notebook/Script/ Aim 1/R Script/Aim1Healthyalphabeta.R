@@ -97,9 +97,20 @@ dist_uf <- distance(healthy, method = "wunifrac")
 
 pcoa_uf <- ordinate(healthy, method="PCoA", distance = dist_uf)
 
-plot_ordination(healthy, pcoa_uf, color = "sex", shape = "sex")  +
+plot_ordination(healthy, pcoa_uf, color = "sex", title = "Weighted Unifrac")  + 
   geom_point(size = 2)
 
+adonis2(dist_uf ~ sex,
+        data = data.frame(sample_data(healthy)))
+
+#Bray-Curtis Test
+bray_dist <- distance(healthy, method = "bray")
+
+ordu <- ordinate(healthy, method = "PCoA", distance = bray_dist)
+plot_ordination(healthy, ordu, color = "sex", title = "Bray Curtis") +
+  geom_point(size = 2)
+
+adonis2(bray_dist ~ sex, data = data.frame(sample_data(healthy))
 
 adonis2(dist_uf ~ sex,
         data = data.frame(sample_data(healthy)))
