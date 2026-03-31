@@ -26,6 +26,14 @@
 
 ## Notes
 * Feedback from Bessie
-
+- Do not need to repeat sentence on bottom of alpha diversity or beta, choose either bray or weighted not both same with alpha chose one figure
+- depeleted in female MS patients core microbiome results compared to healthy
+- bullet points to get teams to mention difference in distribution for presentations
+- make venn diagrams smaller and add more bullet points
+- change expression to abundance DeSeq slide
+- call enrich and depleted
+- make PCA plot that shows there is nothing for PICRUSt2
+- title of slide PICRUSt2 and ISA showed no nothing could make it bullet points instead of figures
+- change title slide to no difference instead of minimal strongly supports no difference 
 ## To-do List
 * Clean lab notebook and organize it
