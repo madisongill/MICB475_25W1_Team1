@@ -6,7 +6,14 @@
 * Alpha Beta Diversity for Controls
 * Note did not include PICRUSt2 or Indicator Species Results in slide deck as they will not be included in manuscript.
   
-  
+  <img width="1800" height="1500" alt="weighted_unifrac_plot" src="https://github.com/user-attachments/assets/2ddf5a52-bb6f-40ec-ab74-b910a9a7aee7" />
+
+<img width="1800" height="1500" alt="braycurtis_ms_ellipse" src="https://github.com/user-attachments/assets/07ed5884-a8b8-4a60-a66a-4d31c7c3b727" />
+
+<img width="1800" height="1500" alt="ellipse_plot_healthy_weightedunifrac" src="https://github.com/user-attachments/assets/5f087e58-8
+
+<img width="1800" height="1500" alt="braycurtis_healthy_ellipse" src="https://github.com/user-attachments/assets/62de4bc9-01dd-4976-a071-125aa7ed2bfe" />
+8bd-4e7c-89fd-aa0ea3401dc3" />
 
 ## Meeting Agenda
 * Presentation Slides Editing and Questions for Bessie
