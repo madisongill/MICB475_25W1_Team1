@@ -1,0 +1,24 @@
+# Make picrust directory in working directory
+mkdir picrust
+
+# Prep data for picrust 
+qiime tools export \
+   --input-path final-cleaned-table.qza  \
+   --output-path picrust
+
+qiime tools export \
+   --input-path rep-seqs.qza \
+   --output-path picrust
+
+#Deactive qiime and activate picrust
+  conda deactivate 
+  conda activate picrust2
+
+#Run picrust pipeline
+picrust2_pipeline.py \
+   -s picrust/dna-sequences.fasta \
+   -i picrust/feature-table.biom \
+   -o picrust_out
+
+# Export out pathways to local server
+scp -r root@10.19.139.184:/data/project_2/picrust_out/pathways_out/path_abun_unstrat.tsv.gz .
