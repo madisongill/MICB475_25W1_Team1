@@ -6,9 +6,12 @@
 * Alpha Beta Diversity for Controls
 * Note did not include PICRUSt2 or Indicator Species Results in slide deck as they will not be included in manuscript.
   
+  
 
 ## Meeting Agenda
 * Presentation Slides Editing and Questions for Bessie
+* Future directions want to clarify proposed options make sense
+* Go over presentation structure and organization.
 
 
 ## Notes
