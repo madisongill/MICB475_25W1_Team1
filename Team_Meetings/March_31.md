@@ -10,10 +10,11 @@
 
 <img width="1800" height="1500" alt="braycurtis_ms_ellipse" src="https://github.com/user-attachments/assets/07ed5884-a8b8-4a60-a66a-4d31c7c3b727" />
 
-<img width="1800" height="1500" alt="ellipse_plot_healthy_weightedunifrac" src="https://github.com/user-attachments/assets/5f087e58-8
+<img width="1800" height="1500" alt="ellipse_plot_healthy_weightedunifrac" src="https://github.com/user-attachments/assets/294c1f7d-3029-4a7f-8ac1-af2b7a648814" />
+
 
 <img width="1800" height="1500" alt="braycurtis_healthy_ellipse" src="https://github.com/user-attachments/assets/62de4bc9-01dd-4976-a071-125aa7ed2bfe" />
-8bd-4e7c-89fd-aa0ea3401dc3" />
+
 
 ## Meeting Agenda
 * Presentation Slides Editing and Questions for Bessie
