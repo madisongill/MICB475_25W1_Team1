@@ -46,3 +46,11 @@ abundance_daa_results_df <- pathway_daa(abundance = abundance_ms,
                                         daa_method = "DESeq2")
 
 feature_with_p_0.005 <- abundance_daa_results_df %>% filter(p_values < 0.005)
+
+# Make PCA Plot For MS 
+
+pca_plot <- pathway_pca(
+  abundance = abundance_ms,
+  metadata = meta_ms,
+  group = "sex" 
+)
