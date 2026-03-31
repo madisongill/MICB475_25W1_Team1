@@ -42,3 +42,11 @@ abundance_daa_results_df <- pathway_daa(abundance = abundance_control,
                                         daa_method = "DESeq2")
 
 feature_with_p_0.005 <- abundance_daa_results_df %>% filter(p_values < 0.005)
+
+#Make PCA Plot to show no significant difference
+
+pca_plot <- pathway_pca(
+  abundance = abundance_control,
+  metadata = meta_control,
+  group = "sex" 
+)
