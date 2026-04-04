@@ -47,10 +47,29 @@ abundance_daa_results_df <- pathway_daa(abundance = abundance_ms,
 
 feature_with_p_0.005 <- abundance_daa_results_df %>% filter(p_values < 0.005)
 
-# Make PCA Plot For MS 
+# Re-sync samples after zero removal
+common_samples_clean <- intersect(colnames(abundance_ms), meta_ms$sampleid)
+abundance_ms <- abundance_ms[, common_samples_clean]
+meta_ms <- meta_ms[match(common_samples_clean, meta_ms$sampleid), ]
 
+# Run PCA using ggpicrust2
 ms_pca_plot <- pathway_pca(
-  abundance = abundance_ms,
-  metadata = meta_ms,
-  group = "sex" 
-)
+  abundance     = abundance_ms,
+  metadata      = meta_ms,
+  group         = "sex",
+  colors        = c("#E07070", "#5BBCB0"),
+  show_marginal = FALSE        # <-- this fixes the axis issue
+) +
+  labs(
+    title = "PCA of PICRUSt2 predicted functions (MS patients)",
+    color = "Sex",
+    fill  = "Sex"
+  ) +
+  theme_classic() +
+  theme(plot.title = element_text(hjust = 0.5))
+
+# View the plot
+ms_pca_plot
+
+#Save the plot
+ggsave("picrust2_pca_sex.png", ms_pca_plot, width = 7, height = 5, dpi = 300)
