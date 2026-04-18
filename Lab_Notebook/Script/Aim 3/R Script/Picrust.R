@@ -45,7 +45,7 @@ abundance_daa_results_df <- pathway_daa(abundance = abundance_ms,
                                         group = "sex", 
                                         daa_method = "DESeq2")
 
-feature_with_p_0.005 <- abundance_daa_results_df %>% filter(p_values < 0.005)
+feature_with_p_0.005 <- abundance_daa_results_df %>% filter(p_values < 0.05)
 
 # Re-sync samples after zero removal
 common_samples_clean <- intersect(colnames(abundance_ms), meta_ms$sampleid)
