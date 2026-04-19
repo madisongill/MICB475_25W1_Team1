@@ -113,7 +113,7 @@ plot_ordination(healthy, ordu_unifrac, color = "sex", title = "Unweighted Unifra
 plot_ordination(healthy, ordu_unifrac, color = "sex", title = "Unweighted Unifrac")  + 
   geom_point(size = 2)+
   stat_ellipse(aes(color = sex), type = "t") +
-  ggtitle("Weighted UniFrac") #to add ellipses
+  ggtitle("Unweighted UniFrac") #to add ellipses
 
 adonis2(unifrac_dist ~ sex, data = data.frame(sample_data(ms)))
 
