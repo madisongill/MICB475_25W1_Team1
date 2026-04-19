@@ -92,9 +92,8 @@ ggplot(pd_healthy, aes(x = sex, y = PD)) +
        y = "PD") +
   theme_minimal()
 
-#Calculate beta diversity
+#Calculate beta diversity weighted unifrac
 dist_uf <- distance(healthy, method = "wunifrac")
-
 pcoa_uf <- ordinate(healthy, method="PCoA", distance = dist_uf)
 
 plot_ordination(healthy, pcoa_uf, color = "sex", title = "Weighted Unifrac")  + 
@@ -104,6 +103,19 @@ plot_ordination(healthy, pcoa_uf, color = "sex", title = "Weighted Unifrac")  +
 
 adonis2(dist_uf ~ sex,
         data = data.frame(sample_data(healthy)))
+
+# Unweighted Unifrac
+unifrac_dist <- distance(healthy, method = "unifrac", weighted = FALSE)
+ordu_unifrac <- ordinate(healthy, method = "PCoA", distance = unifrac_dist)
+plot_ordination(healthy, ordu_unifrac, color = "sex", title = "Unweighted Unifrac for Healthy Controls") +
+  geom_point(size = 2)
+
+plot_ordination(healthy, ordu_unifrac, color = "sex", title = "Unweighted Unifrac")  + 
+  geom_point(size = 2)+
+  stat_ellipse(aes(color = sex), type = "t") +
+  ggtitle("Weighted UniFrac") #to add ellipses
+
+adonis2(unifrac_dist ~ sex, data = data.frame(sample_data(ms)))
 
 #Bray-Curtis Test
 bray_dist <- distance(healthy, method = "bray")
