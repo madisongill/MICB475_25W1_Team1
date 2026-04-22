@@ -9,8 +9,9 @@
 [Feb 10](https://github.com/madisongill/MICB475_25W1_Team1/blob/main/Team_Meetings/Feb_10.md)     [Feb 24](https://github.com/madisongill/MICB475_25W1_Team1/blob/main/Team_Meetings/Feb_24.md)     
 [March 3](https://github.com/madisongill/MICB475_25W1_Team1/blob/main/Team_Meetings/March_3.md)    [March 10](https://github.com/madisongill/MICB475_25W1_Team1/blob/main/Team_Meetings/March_10.md)  
 [March 17](https://github.com/madisongill/MICB475_25W1_Team1/blob/main/Team_Meetings/March_17.md) 
-[March 24](https://github.com/madisongill/MICB475_25W1_Team1/blob/main/Team_Meetings/March _24.md)
-[March 31](/Team_Meetings)  [April 7](/Team_Meetings) 
+[March 24](https://github.com/madisongill/MICB475_25W1_Team1/blob/main/Team_Meetings/March_24.md) 
+[March 31](https://github.com/madisongill/MICB475_25W1_Team1/blob/main/Team_Meetings/March_31.md)  
+[April 7](https://github.com/madisongill/MICB475_25W1_Team1/blob/main/Team_Meetings/April_7.md) 
 
 
 [Lab Notebook](/Lab_Notebook)
