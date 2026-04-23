@@ -54,7 +54,7 @@ ms <- phyloseq(OTU, SAMP, TAXA, phylotree)
 # Rarefy phyloseq object
 ms_rare <- rarefy_even_depth(ms, rngseed = 1, sample.size = 10022)
 
-#Subset the rarefied phyloseq object by MS subtype (RRMS, SPMS, PPMS, Control)
+#Subset the rarefied phyloseq object to include only Healthy Controls
 unique(meta$disease_course)
 
 healthy <- subset_samples(ms_rare, disease_course =="Control")
@@ -64,17 +64,15 @@ sd_healthy <- estimate_richness(healthy, measures = "Shannon")
 sd_healthy$sex <- sample_data(healthy)$sex
 sd_healthy
 
-sd_plot <- plot_richness(healthy, x = "sex", measures = "Shannon")
-
 wilcox.test(Shannon ~ sex, data = sd_healthy)
 
 ggplot(sd_healthy, aes(x = sex, y = Shannon)) +
   geom_boxplot() +
   geom_jitter(width = 0.2, alpha = 0.6) +
-  labs(title = "Shannon Diversity by Group",
+  labs(title = "Shannon Diversity for Healthy Patients",
        x = "sex",
        y = "Shannon ") +
-  theme_minimal()
+  theme_classic()
 
 ## Calculate Faiths PD 
 pd_healthy <- pd(t(otu_table(healthy)),
@@ -87,10 +85,10 @@ wilcox.test(PD ~ sex, data = pd_healthy)
 ggplot(pd_healthy, aes(x = sex, y = PD)) +
   geom_boxplot() +
   geom_jitter(width = 0.2, alpha = 0.6) +
-  labs(title = "Faith's Phylogenetic Diversity by Group",
+  labs(title = "Faith's Phylogenetic Diversity for Healthy Patients",
        x = "sex",
        y = "PD") +
-  theme_minimal()
+  theme_classic()
 
 #Calculate beta diversity weighted unifrac
 dist_uf <- distance(healthy, method = "wunifrac")
@@ -99,7 +97,8 @@ pcoa_uf <- ordinate(healthy, method="PCoA", distance = dist_uf)
 plot_ordination(healthy, pcoa_uf, color = "sex", title = "Weighted Unifrac")  + 
   geom_point(size = 2)+
   stat_ellipse(aes(color = sex), type = "t") +
-  ggtitle("Weighted UniFrac") #to add ellipse
+  ggtitle("Weighted UniFrac for Healthy Patients") +
+  theme_classic()
 
 adonis2(dist_uf ~ sex,
         data = data.frame(sample_data(healthy)))
@@ -107,13 +106,13 @@ adonis2(dist_uf ~ sex,
 # Unweighted Unifrac
 unifrac_dist <- distance(healthy, method = "unifrac", weighted = FALSE)
 ordu_unifrac <- ordinate(healthy, method = "PCoA", distance = unifrac_dist)
-plot_ordination(healthy, ordu_unifrac, color = "sex", title = "Unweighted Unifrac for Healthy Controls") +
-  geom_point(size = 2)
+
 
 plot_ordination(healthy, ordu_unifrac, color = "sex", title = "Unweighted Unifrac")  + 
   geom_point(size = 2)+
   stat_ellipse(aes(color = sex), type = "t") +
-  ggtitle("Unweighted UniFrac") #to add ellipses
+  ggtitle("Unweighted UniFrac for Healthy Patients") +
+  theme_classic()
 
 adonis2(unifrac_dist ~ sex, data = data.frame(sample_data(ms)))
 
