@@ -7,6 +7,7 @@ library(ape)
 library(vegan)
 library(picante)
 library(ggplot2)
+library(ggpubr)
 
 #Load metadata, feature table, taxonomy and rooted tree files
 metaFP <- "metadata_usa.tsv"
@@ -70,17 +71,20 @@ ms <- subset_samples(ms_rare, disease == "MS")
 sd_ms <- estimate_richness(ms, measures = "Shannon")
 sd_ms$sex <- sample_data(ms)$sex
 
-sd_plot <- plot_richness(ms, x = "sex", measures = "Shannon")
+wilcox.test(Shannon ~ sex, data = sd_ms)
 
 ggplot(sd_ms, aes(x = sex, y = Shannon)) +
   geom_boxplot() +
-  geom_jitter(width = 0.2, alpha = 0.6) +
-  labs(title = "Shannon Diversity by Sex for MS patients",
-       x = "sex",
-       y = "Shannon ") +
-  theme_minimal()
+  geom_jitter(width = 0.2, alpha = 0.5) +
+  stat_compare_means(
+    comparisons = list(c("F", "M")),
+    label = "p.signif",      
+    method = "wilcox.test"   
+  ) +
+  labs(title = "Shannon Diversity for MS Patients",
+       x = "sex", y = "Shannon") +
+  theme_classic()
 
-wilcox.test(Shannon ~ sex, data = sd_ms)
 
 ## Calculate Faiths PD 
 pd_ms <- pd(t(otu_table(ms)),
@@ -88,42 +92,51 @@ pd_ms <- pd(t(otu_table(ms)),
               include.root = FALSE)
 pd_ms$sex <- sample_data(ms)$sex
 
+wilcox.test(PD ~ sex, data = pd_ms)
+
 ggplot(pd_ms, aes(x = sex, y = PD)) +
   geom_boxplot() +
   geom_jitter(width = 0.2, alpha = 0.6) +
-  labs(title = "Faith's Phylogenetic Diversity by Sex for MS patients",
+  stat_compare_means(
+    comparisons = list(c("F", "M")),
+    label = "p.signif",
+    method = "wilcox.test"
+  ) +
+  labs(title = "Faith's Phylogenetic Diversity for MS Patients",
        x = "sex",
        y = "PD") +
-  theme_minimal()
-
-wilcox.test(PD ~ sex, data = pd_ms)
+  theme_classic()
 
 #Calculate weighted unifrac for beta diversity
 dist_uf <- distance(ms, method = "wunifrac")
 
 pcoa_uf <- ordinate(ms, method="PCoA", distance = dist_uf)
 
-plot_ordination(ms, pcoa_uf, color = "sex", shape = "sex", title = "Weighted Unifrac")  + 
-  geom_point(size = 2)
-
+plot_ordination(ms, pcoa_uf, color = "sex", title = "Weighted Unifrac for MS Patients")  + 
+  geom_point(size = 2)+
+  stat_ellipse(aes(color = sex), type = "t") +
+  ggtitle("Weighted UniFrac for MS Patients") +
+  theme_classic()
 adonis2(dist_uf ~ sex,
         data = data.frame(sample_data(ms)))
 
-plot_ordination(ms, pcoa_uf, color = "sex", shape = "allergies")  + 
-  geom_point(size = 2)
-
 # Unweighted Unifrac
 unifrac_dist <- distance(ms, method = "unifrac", weighted = FALSE)
+                             
 ordu_unifrac <- ordinate(ms, method = "PCoA", distance = unifrac_dist)
-plot_ordination(ms, ordu_unifrac, color = "sex", title = "Unweighted Unifrac") +
-  geom_point(size = 2)
-
+                             
+plot_ordination(ms, ordu_unifrac, color = "sex", title = "Unweighted Unifrac for MS Patients") +
+  geom_point(size = 2) +
+  stat_ellipse(aes(color = sex), type = "t") +
+  ggtitle("Unweighted UniFrac for MS Patients") +
+  theme_classic()
 adonis2(unifrac_dist ~ sex, data = data.frame(sample_data(ms)))
 
 #Bray-Curtis Test
 bray_dist <- distance(ms, method = "bray")
 
 ordu <- ordinate(ms, method = "PCoA", distance = bray_dist)
+                             
 plot_ordination(ms, ordu, color = "sex", title = "Bray Curtis") +
   geom_point(size = 2)
 
@@ -131,7 +144,9 @@ adonis2(bray_dist ~ sex, data = data.frame(sample_data(ms)))
 
 #Jacard test
 jac_dist <- distance(ms, method = "jaccard")
+                             
 ordu_jac <- ordinate(ms, method = "PCoA", distance = jac_dist)
+                             
 plot_ordination(ms, ordu_jac, color = "sex", title = "Jacard") +
   geom_point(size = 2)
 
