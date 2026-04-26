@@ -13,7 +13,7 @@ ms_genus_RA <- transform_sample_counts(ms_genus,fun=function(x) x/sum(x))
 #subset data into control groups
 ms_stat_healthy <- subset_samples(ms_genus_RA, disease=="Control")
 
-# Run indicator species analysis using the sex variable
+# Run indicator species analysis using the sex variable for control group
 isa_ms_healthy<- multipatt(t(otu_table(ms_stat_healthy)), cluster = sample_data(ms_stat_healthy)$'sex')
 
 summary (isa_ms_healthy)
